@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccafac !important;
+    font-family: 'Poppins' !important;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.card {
+    position: absolute;
+    top: 50px;
+    padding: 2rem 1rem;
+    display: flex;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 1px #272727;
+    background-image: url('../img/capa-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img-capa img {
+    box-shadow: 0 1px 2px 2px #efcc6c;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+} 
+#box-right h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+#box-right strong {
+    background-color: #000;
+    border-radius: 4px;
+    padding: 0;
+    text-transform: uppercase;
+    color: #efcc6c;
+    text-shadow: 0 0 2px rgba(255, 255, 255, .8);
+} 
+#box-right p {
+    line-height: 28px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#box-right .btn:hover {
+    background-color: #efcc6c;
+    color: #000;
+    border: none;
+} 
+
+/* Modal Class */
+.form-group input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color: #272727;
+}

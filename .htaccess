@@ -1,0 +1,25 @@
+RewriteEngine On
+Options -Indexes
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+<ifModule mod_headers.c>
+  Header set Connection keep-alive
+</ifModule>
+
+ErrorDocument 403 http://caseirinhosfestivos.contemonline.com.br/
+ErrorDocument 500 http://caseirinhosfestivos.contemonline.com.br/
+ErrorDocument 502 http://caseirinhosfestivos.contemonline.com.br/
+ErrorDocument 503 http://caseirinhosfestivos.contemonline.com.br/
+ErrorDocument 504 http://caseirinhosfestivos.contemonline.com.br/
+
+
+
+
+
+
+
+
+
